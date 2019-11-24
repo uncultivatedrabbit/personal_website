@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      title="Brandon Melendez is a poet and web developer living in Boston, MA"
+    />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Brandon Melendez is a poet and web developer living in Boston, MA"
+    />
+    <meta
+      property="og:site_name"
+      content="Brandon Melendez, Poet and Web Developer living in Boston, who loves designing and building websites."
+    />
+    <meta property="og:url" content="https://www.brandonmelendez.net" />
+    <meta property="og:type" content="profile" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta property="og:image" content="/images/brandon_face.JPG" />
+    <meta property="og:image:height" content="500" />
+    <meta
+      property="og:image:alt"
+      content="Brandon Melendez posed in red and blue lights with headphones"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta
+      name="keywords"
+      content="freelance, web developer, boston, developer, web design, web app, web application, javascript, python, flask, react, django, poetry, poet, writer, web editor, wordpress, copy editor, twitter"
+    />
+    <meta
+      name="description"
+      content="Brandon Melendez is a poet, web developer, and forever student. He is enthusiastic about building web progrects and has experience with HTML, CSS, Javascript, Python, PHP, Wordpress, and frameworks like Django and React.js."
+    />
+    <meta
+      name="twitter:title"
+      content="Brandon Melendez is a poet and web developer living in Boston, MA"
+    />
+    <meta
+      name="twitter:description"
+      content="Brandon Melendez, Poet and Web Developer living in Boston, who loves designing and building websites."
+    />
+    <meta name="twitter:image" content="/images/brandon_face.JPG" />
+    <meta name="twitter:site" content="@onbrandbrandonn" />
+    <meta name="twitter:creator" content="@onbrandbrandonn" />
+    <link rel="canonical" href="https://brandonmelendez.net" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
+      integrity="sha256-MHZlm8KTLRxClmwQTYIfJEVbcRx1VIgfZJjaBOGCDoc="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <title>Brandon Melendez | Poet + Programmer</title>
+  </head>
+  <body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+      <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <div class="container-fluid my-5">
+      <nav class="navbar fixed-top">
+        <div class="onoffswitch">
+          <input
+            type="checkbox"
+            name="onoffswitch"
+            class="onoffswitch-checkbox"
+            id="myonoffswitch"
+          />
+          <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </nav>
+    </div>
+    <div id="fullpage" class="container">
+      <div class="row section">
+        <div id="title-1" class="col-12 col-md-12">
+          <h2 id="typed-title-1"></h2>
+        </div>
+        <div id="title-2" class="col-12 col-md-12">
+          <h2 id="typed-title-2"></h2>
+        </div>
+        <div id="moveTo" class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="about" class="row connect section">
+        <div class="col col-12 col-md-12">
+          <h3>
+            I have an eclectic & extensive list of passions ranging from poetry
+            to programming. I also wrote a
+            <a
+              id="book-link"
+              href="https://www.indiebound.org/book/9781938912870"
+              target="_blank"
+              >book</a
+            >!
+          </h3>
+          <br />
+          <h3>
+            Over the last year, I have started my journey to become a full-stack
+            software engineer.
+          </h3>
+          <br />
+          <h3>Let's build something together!</h3>
+        </div>
+        <div id="social-icons" class="col col-12">
+          <div class="row">
+            <a
+              class="social"
+              href="https://github.com/uncultivatedrabbit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github fa-4x icon-3d"></i>
+            </a>
+            <a
+              class="social"
+              href="https://twitter.com/onbrandbrandonn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter fa-4x icon-3d"></i>
+            </a>
+            <a
+              class="social"
+              href="https://www.facebook.com/brandon.a.melendez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook fa-4x icon-3d"></i>
+            </a>
+            <a
+              class="social"
+              href="https://www.instagram.com/brandon_a_melendez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram fa-4x icon-3d"></i>
+            </a>
+            <a
+              class="social"
+              href="https://www.linkedin.com/in/brandon-melendez-a59a88161/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin fa-4x icon-3d"></i>
+            </a>
+          </div>
+          <div class="row">
+            <div id="moveToTwo" class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col-md-6 col-sm-12">
+          <div class="accordion" id="accordion-one">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="acc-link btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Poetry Inquiries
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordion-one"
+              >
+                <div class="card-body">
+                  Email: brandonmelendezpoetry@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="accordion" id="accordion-two">
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="acc-link btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Web Dev Inquiries
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion-two"
+              >
+                <div class="card-body">
+                  Email: brandonmelendezdev@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="headshot" class="col-12 my-5">
+          <div id="glitch-photo" class="panel">
+            <div
+              class="b-glitch"
+              style="background-image: url('/images/brandon-2.jpg');"
+            >
+              <div
+                class="b-glitch__img"
+                style="background-image: url('/images/brandon-2.jpg');"
+              ></div>
+              <div
+                class="b-glitch__img"
+                style="background-image: url('/images/brandon-2.jpg');"
+              ></div>
+              <div
+                class="b-glitch__img"
+                style="background-image: url('/images/brandon-2.jpg');"
+              ></div>
+              <div
+                class="b-glitch__img"
+                style="background-image: url('/images/brandon-2.jpg');"
+              ></div>
+              <div
+                class="b-glitch__img"
+                style="background-image: url('/images/brandon-2.jpg');"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer">
+          <nav>
+            <p class="text-muted">{( BRANDON MELENDEZ &copy; 2019 )}</p>
+          </nav>
+        </footer>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="text/javascript" src="js/typing.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"
+      integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      particlesJS.load("particles-js", "js/particles-dark.json", function() {
+        console.log("particles-dark.json loaded...");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/09e706ee12.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.extensions.min.js"
+      integrity="sha256-l/fwzXp9IwBn0fFrBx+IU4JGuSP5lZsfE5i8uMAWD90="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/fullpage-scroll.js"></script>
+    <script src="js/loader.js"></script>
+  </body>
+</html>
