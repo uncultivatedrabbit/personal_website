@@ -1,28 +1,11 @@
-const typedTitleOne = new Typed('#typed-title-1', {
-  strings: ["Hello world!^1000\n My name is Brandon Melendez."],
-  typeSpeed: 20,
-
-});
-
-const typedTitleTwo = new Typed('#typed-title-2', {
-  strings: ['&amp; I love to write.', '&amp; I love to code.', '&amp; I love to connect.', '&amp; I love to create.'],
+const typed = new Typed('#typed', {
+  strings: ["<span style='color: rgb(197, 165, 197);'>const</span> <span style='color: rgb(121, 182, 242);'>intro</span> <span style='color: rgb(215, 222, 234);'>=</span> <span style='color: rgb(250, 200, 99);;'>()</span> <span style='color: rgb(215, 222, 234);'>=></span> <span style='color: rgb(141, 200, 145);'>'Hello, world!'</span><br> ^1000My name is Brandon Melendez.<br> ^500&amp; I love to code.",
+  "<span style='color: rgb(197, 165, 197);'>const</span> <span style='color: rgb(121, 182, 242);'>intro</span> <span style='color: rgb(215, 222, 234);'>=</span> <span style='color: rgb(250, 200, 99);;'>()</span> <span style='color: rgb(215, 222, 234);'>=></span> <span style='color: rgb(141, 200, 145);'>'Hello, world!'</span><br> My name is Brandon Melendez.<br> &amp; I love to connect.",
+  "<span style='color: rgb(197, 165, 197);'>const</span> <span style='color: rgb(121, 182, 242);'>intro</span> <span style='color: rgb(215, 222, 234);'>=</span> <span style='color: rgb(250, 200, 99);;'>()</span> <span style='color: rgb(215, 222, 234);'>=></span> <span style='color: rgb(141, 200, 145);'>'Hello, world!'</span><br> My name is Brandon Melendez.<br> &amp; I love to create."],
   smartBackspace: true,
-  startDelay: 2900,
-  typeSpeed: 20,
-  backSpeed: 30,
+  typeSpeed: 30,
+  backSpeed: 50,
+  backDelay: 700,
+  showCursor: false,
+  contentType: 'html',
 });
-
-
-
-const cursorOne = document.getElementsByClassName('typed-cursor')[0]
-const cursorTwo = document.getElementsByClassName('typed-cursor')[1]
-cursorOne.innerText = "|"
-cursorTwo.innerText = ""
-const removeCursor = () => {
-  cursorOne.innerText = ""
-}
-const addCursor = () => {
-  cursorTwo.innerText = "|"
-}
-setTimeout(removeCursor, 3400)
-setTimeout(addCursor, 4000)

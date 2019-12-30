@@ -3,9 +3,8 @@
 
 :root{
   --main-text-color: #f5f6fa;
-  --main-background-dark: #111111;
-  --main-highlight: #8c7ae6;
-  --second-header-size: 2em;
+  --main-background-dark: #000000;
+  --main-highlight: #0097e6;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +19,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  font-size: 24px;
+  font-size: 1rem;
   color: var(--main-text-color);
   background: var(--main-background-dark);
 }
@@ -31,112 +30,7 @@ a{
 a:hover{
   text-decoration: none;
 }
-
-.light{
-  background: var(--main-text-color)!important;
-  -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
-}
-.dark{
-  background: var(--main-background-dark);
-  -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
-}
-
-h2 {
-  font-size: var(--second-header-size);
-  display: inline-block;
-}
-.row{
-  align-content: flex-start;
-}
-#title-1{
-  margin-top: 5%;
-}
-#about{
-  margin-top: 10%;
-}
-#book-btn{
-  background: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-.connect h3 {
-  font-size: 1.6em;
-}
-
-.social:hover {
-  color: transparent;
-  background-color: transparent;
-  text-decoration: none;
-}
-.card, .card-header{
-  background: transparent;
-  border: none;
-}
-
-.btn-link{
-  color: var(--main-text-color);
-}
-
-#moveToTwo{
-  top: 39vh;
-}
-.acc-link{
-  font-size: 1em;
-  text-decoration: none;
-}
-
-.acc-link:hover{
-  color:var(--main-highlight);
-  text-decoration: none;
-}
-.acc-link:focus{
-  text-decoration: none;
-}
-
-#book-link{
-  color: var(--main-highlight);
-  text-decoration: none;  
-  display: inline-block;
-  position: relative;
-}
-#book-link:after,.acc-link:after{    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: var(--main-highlight);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-#book-link:hover:after,.acc-link:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-#headshot{
-  position: absolute;
-  bottom: 15%;
-}
-#footer{
-  position: absolute;
-  bottom: 11%;
-  left: 0;
-  transform: translate(0, 100%);
-  width: 100%;
-  font-size: 16px;
-  text-align: center;
-  cursor: default;
-}
-
-
-/*----------------toogle styles------------------*/
+/*----------------NAVBAR toogle styles------------------*/
 .onoffswitch {
   position: relative; 
   width: 100px;
@@ -164,7 +58,7 @@ h2 {
   height: 30px; 
   padding: 0; 
   line-height: 30px;
-  font-size: 15px; 
+  font-size: 1rem; 
   color: white; 
   font-weight: bold;
   box-sizing: border-box;
@@ -182,8 +76,8 @@ h2 {
 }
 .onoffswitch-switch {
   display: block; 
-  width: 1.3em;
-  height: 1.3em;
+  width: 30%;
+  height: 70%;
   margin-top: 2px;
   background: var(--main-highlight);
   position: absolute; top: 0; bottom: 0;
@@ -203,7 +97,6 @@ h2 {
 /* ----------------------------------------------------------------- */
 
 #particles-js{
-  /* background-color: var(--main-background-dark); */
   width: 100%;
   height: 100%;
   position: fixed;
@@ -211,19 +104,141 @@ h2 {
   left: 0;
   z-index: -2;
   opacity: 0.3;
+  
 }
 
-.typed-cursor {
-  font-size: var(--second-header-size);
+/* ---------------------front-page --------------*/
+
+.front-page{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
 }
+
+#typed{
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+#moveToOne {
+  position: absolute;
+  bottom: 20%;
+}
+
+
+/* ------------ second page ------------ */
+
+#about{
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+#technologies{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+#html-tech{
+  color: #E85D25;
+}
+#css-tech{
+  color: rgb(36,157,219);
+}
+#javascript-tech{
+  color: rgb(224,182,22);
+}
+#react{
+  color: rgb(97,218,251);
+}
+#react i{
+  animation: rotation 10s infinite linear;
+}
+#node{
+  color: rgb(135,192,0);
+}
+#wordpress{
+  color: rgb(43, 148, 197);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/*----------------- Accordian styling ----------------------*/
+.card, .card-header{
+  background: transparent;
+  border: none;
+}
+
+.btn-link{
+  color: var(--main-text-color);
+}
+
+.acc-link{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.acc-link:hover,
+.acc-link:focus{
+  color:var(--main-highlight);
+  text-decoration: none;
+}
+
+/*  book link styling*/
+
+#book-link{
+  color: var(--main-highlight);
+  text-decoration: none;  
+  display: inline-block;
+  position: relative;
+}
+#book-link:after,.acc-link:after{    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--main-highlight);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#book-link:hover:after,.acc-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+/* ---------------------footer styling-------------------- */
+
+#footer{
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  transform: translate(0, 100%);
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  cursor: default;
+}
+
+
+
 
 /* arrow styling with thanks to https://codepen.io/raf187/pen/BvgGRQ  */
 
 .arrow {
-  position: absolute;
-  left: 50%;
   cursor: pointer;
-  top: 75vh;
 }
 
 .arrow span{
@@ -258,6 +273,8 @@ h2 {
 
 /* Glitch Image Styling with thanks to https://codepen.io/iamryanyu/pen/bvwapv
 ------------------------------------- */
+
+
 .b-glitch,
 .b-glitch__img {
   background-repeat: no-repeat;
@@ -268,10 +285,10 @@ h2 {
 }
 
 .b-glitch {
-  height: 15em;
+  height: 20em;
   overflow: hidden;
   position: relative;
-  width: 15em;
+  width: 20em;
   opacity: 0.7;
   left: 50%;
 transform: translateX(-50%);
@@ -335,6 +352,12 @@ transform: translateX(-50%);
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
   animation: icon3d 200ms infinite;
+}
+
+.social:hover {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 @keyframes icon3d {
@@ -623,66 +646,83 @@ transform: translateX(-50%);
 
 
 /*---------------------- mobile styles ----------------------*/
-@media only screen and (max-width: 1100px){
-  .acc-link{
-    font-size: .8em;
-  }
-}
 
-@media only screen and (max-width: 780px){
-  .card-body{
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  h2{
-    font-size: 1.2em;
-  }
-  .typed-cursor {
-    opacity: 0!important;
-  }
-  .connect h3 {
-    font-size: 1.1em;
-  }
-  .icon-3d {
-    font-size: 2em!important;
+@media screen and (max-width: 1000px){
+  #typed{
+    font-size: 1.5rem;
   }
   .b-glitch{
-    height: 7em;
-    width: 7em;
+    height: 15em;
+    width: 15em;
   }
-  #footer{
-    bottom: 20%;
+  .arrow span {
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid var(--main-text-color);
+    border-right: 3px solid var(--main-text-color);
   }
-  .arrow span{
+  #about, .acc-link{
+    font-size: 1rem;
+  }
+  .social{
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #about{
+    text-align:center;
+  }
+  .social{
+    margin: 0 auto;
+  }
+  #technologies{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px){
+  #typed{
+    font-size: 1.2rem;
+  }
+  .acc-link, .card-body{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-height: 700px){
+  #typed, .acc-link, .card-body, #about{
+    font-size: 0.8rem;
+  }
+  .social{
+    font-size: .4rem;
+  }
+  #moveToOne{
+    bottom: 30%;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 319px) 
+and (max-device-width: 850px){
+  .front-page{
+    margin: 0;
+  }
+  #moveToOne{
+    left: 90%;
+    bottom: 40%;
+  }
+  .arrow span {
     width: 15px;
     height: 15px;
-    border-bottom: 2px solid #0097e6;
-    border-right: 2px solid #0097e6;
+    border-bottom: 2px solid var(--main-text-color);
+    border-right: 2px solid var(--main-text-color);
   }
-  div#moveToTwo{
-    top: 20vh;
+  .col-sm-12{
+    width: 50%;
+    flex: none;
   }
-}
-
-@media only screen and (max-width: 375px){
-  #footer{
-    bottom: 15%;
-  }
-  div#moveToTwo{
-    top: 25vh;
+  .card-body{
+    font-size: 0.6rem;
+    padding: 0;
   }
 }
-
-@media only screen and (max-width: 330px){
-  #about{
-    font-size: 0.5em;
-  }
-  #moveToTwo{
-    top: 48vh;
-  }
-}
-
-
-
